@@ -28,7 +28,12 @@ console.log(typeof age);
 console.log(typeof city);//undefined
 console.log(typeof area);//object
 //practise
+//Primitve 7 Datatype  string, number, boolean, null, undefined, symbol, BigInt
+//Reference type (Non primitive) Array, Object, function
+
+
 //number
+
 let length =34;
 let weight = 56;
 //strings
@@ -49,3 +54,30 @@ const person = {
 const cars=["mercedes", "safari", "alto", "BMW"]
 //Date object 
 const date = new Date ("2022-03-25");
+
+//function 
+const myFunction = function(){
+    console.log("Hello world");
+}
+
+//BigInt
+const bigNumber = 12345678987654n;
+
+//Memory 
+//Stack memory-> primitive memory (Duplicate , Copy)
+//Heap Memory -> Non - primitive (Reference)
+let myYouName = "Saimafarheencom"
+let anotherName = myYouName
+anotherName = "Farheen"
+console.log(myYouName)
+console.log(anotherName)
+
+let userOne ={
+    email: "saimafarheen.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "Saimasayeed.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
